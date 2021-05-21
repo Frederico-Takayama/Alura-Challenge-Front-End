@@ -9,3 +9,33 @@
     display: flex;
     align-items: center;
 }
+
+.cabecalho__navegacao {
+    width: 52vw;
+}
+
+.cabecalho__busca {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    width: 52vw;
+    height: 56px;
+    border: none;
+    padding-left:14px;
+    color: var(--branco);
+}
+
+.cabecalho__profile{
+    display: flex;
+}
+
+.cabecalho__profile__foto {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 0.5rem;
+    object-fit: cover;
+}
+
+.cabecalho__profile__nome {
+    color: var(--branco);
+}

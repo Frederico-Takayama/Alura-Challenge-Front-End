@@ -1,13 +1,15 @@
 :root {
     --branco: #FFF;
-    --azul-marinho: #051d3b;
+    --azul-marinho: #051D3B;
+
+    --inter: 'Inter', sans-serif;
 }
 
 body {
     background-color: var(--azul-marinho);
+    font-family: var(--inter);
 }
 
 .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    margin: 3.5rem 2rem 0 2rem;
 }
