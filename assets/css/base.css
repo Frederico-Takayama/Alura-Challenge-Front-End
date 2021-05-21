@@ -1,0 +1,13 @@
+:root {
+    --branco: #FFF;
+    --azul-marinho: #051d3b;
+}
+
+body {
+    background-color: var(--azul-marinho);
+}
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
