@@ -1,20 +1,17 @@
-.cabecalho {
+.header {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
     align-items: center;
 }
 
-.cabecalho__navegacao {
+.header__navigation {
     display: flex;
     align-items: center;
-}
-
-.cabecalho__navegacao {
     width: 52vw;
 }
 
-.cabecalho__busca {
+.header__search {
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
     width: 52vw;
@@ -24,11 +21,11 @@
     color: var(--branco);
 }
 
-.cabecalho__profile{
+.header__profile{
     display: flex;
 }
 
-.cabecalho__profile__foto {
+.header__profile__photo {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -36,6 +33,6 @@
     object-fit: cover;
 }
 
-.cabecalho__profile__nome {
+.header__profile__name {
     color: var(--branco);
 }
