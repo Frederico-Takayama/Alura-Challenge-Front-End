@@ -5,6 +5,8 @@
 
 .menu ul {
     padding-left: 0;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
 }
 
 .menu li {
@@ -47,6 +49,7 @@
 .menu__name {
     margin-left: 1rem;
     color: var(--branco);
+    width: 100%;
 }
 
 .menu__editor .menu__name, .menu__community .menu__name {
