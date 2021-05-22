@@ -1,5 +1,6 @@
 :root {
     --branco: #FFF;
+    --prata: #b3bac4;
     --azul-marinho: #051D3B;
     --azul-agua: #5081FB;
 
@@ -38,4 +39,8 @@ body {
     letter-spacing: 0.4em;
     text-transform: uppercase;
     margin: 0;
+}
+
+::placeholder {
+    color: var(--prata);
 }
