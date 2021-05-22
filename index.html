@@ -52,17 +52,32 @@
                 <p>screen here</p>
             </div>
             <nav class="sidebar right_container">
-                <p class="title">Seu projeto</p>
                 <section class="sidebar__navigation">
                     <form class="sidebar__form">
+                        <p class="title">Seu projeto</p>
                         <input type="text" id="project_name" placeholder="Nome do seu projeto" class="sidebar__input"/>
                         <textarea name="project_description" id="project_description" placeholder="Descrição do seu projeto"
                             cols="30" rows="10" class="sidebar__description"></textarea>
+                        <p class="title">Personalização</p>
+                        <div class="custom-select-wrapper sidebar__select">
+                            <div class="custom-select">
+                                <div class="custom-select__trigger"><span>Javascript</span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected" data-value="0">Javascript</span>
+                                    <span class="custom-option" data-value="1">HTML</span>
+                                    <span class="custom-option" data-value="2">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </form>
                 </section>
             </nav>
         </main>
         <footer>
         </footer>
+        <script src="assets/js/custom-select.js"></script>
     </body>
 </html>

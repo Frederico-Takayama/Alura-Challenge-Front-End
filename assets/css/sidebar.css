@@ -11,26 +11,133 @@
 
 .sidebar__form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar__input {
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
-    width: 100%;
     height: 56px;
     border: none;
     padding: 0 0 0 14px;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     color: var(--branco);
 }
 
 .sidebar__description {
+    margin-top: 1rem;
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
-    width: 100%;
     height: 80px;
     border: none;
     padding: 16px 0 0 14px;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
+    color: var(--branco);
+    resize: none;
+}
+
+/* customized select */
+.sidebar__select {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    height: 56px;
+    border: none;
+    padding: 0 14px 0 14px;
+    margin-top: 1rem;
     color: var(--branco);
 }
+
+.custom-select-wrapper {
+    user-select: none;
+}
+
+.custom-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-select__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 56px;
+    cursor: pointer;
+}
+
+.custom-options {
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    color: var(--branco);
+}
+
+.custom-select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.custom-option {
+    display: block;
+    padding: 0 22px 0 22px;
+    color: var(--branco);
+    line-height: 56px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.custom-option:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
+}
+
+.custom-option.selected {
+    color: #ffffff;
+    background-color: var(--azul-agua);
+    border-radius: 8px;
+}
+
+.arrow {
+    position: relative;
+    height: 6px;
+    width: 6px;
+}
+
+.arrow::before, .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0.15rem;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.arrow::before {
+    left: -2px;
+    transform: rotate(-45deg);
+    background-color: var(--branco);
+}
+
+.arrow::after {
+    left: 2px;
+    transform: rotate(45deg);
+    background-color: var(--branco);
+}
+
+.open .arrow::before {
+    left: -2px;
+    transform: rotate(45deg);
+}
+
+.open .arrow::after {
+    left: 2px;
+    transform: rotate(-45deg);
+}
+/* end of customized select */
