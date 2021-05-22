@@ -1,6 +1,7 @@
 :root {
     --branco: #FFF;
     --azul-marinho: #051D3B;
+    --azul-agua: #5081FB;
 
     --inter: 'Inter', sans-serif;
 }
@@ -8,6 +9,10 @@
 body {
     background-color: var(--azul-marinho);
     font-family: var(--inter);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--branco);
 }
 
 .container {
