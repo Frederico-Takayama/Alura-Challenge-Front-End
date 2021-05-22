@@ -11,40 +11,53 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <link href="assets/css/base.css" rel="stylesheet">
         <link href="assets/css/header.css" rel="stylesheet">
+        <link href="assets/css/menu.css" rel="stylesheet">
         <link href="assets/css/sidebar.css" rel="stylesheet">
+        <link href="assets/css/screen.css" rel="stylesheet">
     </head>
     <body>
-        <header class="header container">
-            <a href="#" class="header__logo"><img src="assets/img/logo-allura_dev.svg" alt="Logo da Allura Dev"></a>
+        <header class="header">
+            <a href="#" class="header__logo left_container"><img src="assets/img/logo-allura_dev.svg" alt="Logo da Allura Dev"></a>
             <section class="header__navigation">
-                <input type="text" id="txtBusca" placeholder="Busque por algo" class="header__search"/>
+                <input type="text" id="search_bar" placeholder="Busque por algo" class="header__search middle_container"/>
             </section>
-            <section class="header__profile">
+            <section class="header__profile right_container">
                 <img src="assets/img/profile.jpg" alt="" class="header__profile__photo">
                 <p class="header__profile__name">Magico</p>
             </section>
         </header>
-        <main>
-            <nav class="sidebar container">
-                <p class="sidebar__title">Menu</p>
+        <main class="main">
+            <nav class="menu left_container">
+                <p class="title">Menu</p>
                 <ul>
                     <li>
-                        <a href="#" class="sidebar__editor--active">
-                            <div class="sidebar__img__bg">
-                                <img src="assets/img/icon-code_editor.svg" alt="Icone do editor de código" class="sidebar__editor__img">
+                        <a href="#" class="menu__editor--active">
+                            <div class="menu__img__bg">
+                                <img src="assets/img/icon-code_editor.svg" alt="Icone do editor de código" class="menu__editor__img">
                             </div>
-                            <p class="sidebar__name">Editor de código</p>
+                            <p class="menu__name">Editor de código</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="sidebar__community">
-                            <div class="sidebar__img__bg">
-                                <img src="assets/img/icon-community.svg" alt="" class="sidebar__community__img">
+                        <a href="#" class="menu__community">
+                            <div class="menu__img__bg">
+                                <img src="assets/img/icon-community.svg" alt="" class="menu__community__img">
                             </div>
-                            <p class="sidebar__name">Comunidade</p>
+                            <p class="menu__name">Comunidade</p>
                         </a>
                     </li>
                 </ul>
+            </nav>
+            <div class="screen middle_container">
+                <p>screen here</p>
+            </div>
+            <nav class="sidebar right_container">
+                <p class="title">Seu projeto</p>
+                <section class="sidebar__navigation">
+                    <form class="sidebar__form">
+                        <input type="text" id="project_name" placeholder="Nome do seu projeto" class="sidebar__input"/>
+                    </form>
+                </section>
             </nav>
         </main>
         <footer>
