@@ -1,4 +1,6 @@
 .screen {
-    background-color: var(--azul-agua);
+    background-color: var(--azul-claro);
     width: 50%;
+    border-radius: 8px;
+    transition: background-color 0.8s;
 }
