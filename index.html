@@ -17,16 +17,23 @@
     </head>
     <body>
         <header class="header">
-            <div class="header__logo">
-                <a href="#" class="left_container"><img src="assets/img/logo-allura_dev.svg" alt="Logo da Allura Dev"></a>
+            <div class="header__logo left_container">
+                <a href="#" class="header__logo-bg"><img src="assets/img/logo-allura_dev.svg" alt="Logo da Allura Dev"></a>
             </div>
-            <section class="header__navigation">
-                <input type="text" id="search_bar" placeholder="Busque por algo" class="header__search middle_container"/>
+            <section class="middle">
+                <div class="header__navigation middle_container">
+                    <input type="text" id="search_bar" placeholder="Busque por algo" class="header__search "/>
+                </div>
             </section>
-            <section class="header__profile">
-                <div class="header__bg right_container">
-                    <img src="assets/img/profile.jpg" alt="" class="header__profile__photo">
+            <section class="header__profile right_container">
+                <div class="header__profile-bg">
+                    <img src="assets/img/profile.jpg" alt="Imagem do perfil" class="header__profile__photo">
                     <p class="header__profile__name">Magico</p>
+                </div>
+                <div class="header__hamburguer-menu right_container">
+                    <div class="header__hamburguer-bg">
+                        <img src="assets/img/menu-hamburguer.svg" alt="Menu do perfil">
+                    </div>
                 </div>
             </section>
         </header>

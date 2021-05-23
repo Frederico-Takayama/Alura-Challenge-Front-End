@@ -38,6 +38,12 @@ body {
     margin: 2rem 2.5rem 0.5rem 0;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .main {
     display: flex;
     justify-content: space-between;
@@ -53,4 +59,10 @@ body {
 
 ::placeholder {
     color: var(--prata);
+}
+
+@media screen and (max-width:1440px) {
+    .right_container {
+        margin-right: 2.875rem;
+    }
 }
