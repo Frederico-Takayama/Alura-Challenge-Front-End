@@ -67,7 +67,7 @@
     color: var(--branco);
 }
 
-.header__hamburguer-menu {
+.header__hamburguer-menu, .header__explorer {
     display: none;
 }
 
@@ -117,5 +117,34 @@
 
     .header__hamburguer-bg:active {
         background: rgba(80, 129, 251, 0.16);
+    }
+}
+
+@media screen and (max-width:540px) {
+    .header--middle {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+    .header__explorer {
+        display: inline;
+    }
+
+    .header__explorer-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        height: 48px;
+        width: 48px;
+    }
+
+    .header__explorer-bg:hover {
+        background: rgba(80, 129, 251, 0.08);
     }
 }

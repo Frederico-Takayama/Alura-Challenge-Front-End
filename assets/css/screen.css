@@ -94,3 +94,17 @@
         margin: 0 2rem 0 2rem;
     }
 }
+
+@media screen and (max-width:540px) {
+    .middle {
+        margin: 0 1rem 0 1rem;
+    }
+
+    .screen {
+        height: 492px;
+    }
+
+    .screen__area {
+        height: 428px;
+    }
+}
