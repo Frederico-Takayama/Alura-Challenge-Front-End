@@ -7,8 +7,8 @@
         <title>Home | Allura Challenge Front-End</title>
 
         <link href="assets/css/normalize.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <link href="assets/css/base.css" rel="stylesheet">
         <link href="assets/css/header.css" rel="stylesheet">
         <link href="assets/css/menu.css" rel="stylesheet">
@@ -49,6 +49,26 @@
                 </ul>
             </nav>
             <div class="screen middle_container" id="screen_bg">
+                <div class="screen__area">
+                    <div class="screen__prompt">
+                        <div class="screen__dot screen__dot-red"></div>
+                        <div class="screen__dot screen__dot-yellow"></div>
+                        <div class="screen__dot screen__dot-green"></div>
+                    </div>
+                    <textarea name="screen__editor" cols="30" rows="10" class="screen__editor">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}
+                    </textarea>
+                </div>
             </div>
             <nav class="sidebar right_container">
                 <section class="sidebar__navigation">

@@ -1,13 +1,18 @@
 :root {
     --branco: #FFF;
     --preto: #000;
+    --grafite: #141414;
+    --cinza-escuro: #2d415b;
     --prata: #b3bac4;
     --azul-marinho: #051D3B;
     --azul-agua: #5081FB;
     --azul-claro: #6BD1FF;
-    --cinza-escuro: #2d415b;
+    --vermelho: #FF5F56;
+    --amarelo: #FFBD2E;
+    --verde: #27C93F;
 
     --inter: 'Inter', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
 }
 
 body {
