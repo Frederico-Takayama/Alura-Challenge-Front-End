@@ -70,3 +70,16 @@
     color: var(--branco);
     background: rgba(80, 129, 251, 0.08);
 }
+
+.screen__vizualize:hover {
+    background: rgba(80, 129, 251, 0.16);
+}
+
+.screen__vizualize:active {
+    background: rgba(80, 129, 251, 0.16);
+    border: 4px solid rgba(80, 129, 251, 0.24);
+}
+
+.screen__vizualize:focus {
+    background: rgba(80, 129, 251, 0.16);
+}

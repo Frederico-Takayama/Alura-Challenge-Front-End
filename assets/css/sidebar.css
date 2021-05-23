@@ -37,6 +37,10 @@
     resize: none;
 }
 
+.sidebar__input:hover, .sidebar__description:hover {
+    background: rgba(255, 255, 255, 0.24);
+}
+
 /* customized select */
 .sidebar__select {
     background: rgba(255, 255, 255, 0.16);
@@ -46,6 +50,10 @@
     padding: 0 14px 0 14px;
     margin-top: 1rem;
     color: var(--branco);
+}
+
+.sidebar__select:hover {
+    background: rgba(255, 255, 255, 0.24);
 }
 
 .custom-select-wrapper {
@@ -166,4 +174,17 @@
     padding: 0 14px 0 14px;
     color: var(--preto);
     background-color: var(--azul-agua);
+}
+
+.sidebar__submit:hover {
+    background: var(--azul-ceu);
+}
+
+.sidebar__submit:active {
+    background: var(--azul-ceu);
+    border: 4px solid rgba(80, 129, 251, 0.72);
+}
+
+.sidebar__submit:focus {
+    background: var(--azul-ceu-limpo);
 }

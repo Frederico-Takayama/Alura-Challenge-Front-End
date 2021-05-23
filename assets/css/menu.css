@@ -29,6 +29,10 @@
     text-decoration: none;
 }
 
+.menu__editor:hover, .menu__community:hover, .menu__editor--active:hover, .menu__community--active:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+}
 .menu__img__bg {
     padding: 12px;
     background-color: rgba(80, 129, 251, 0.16);

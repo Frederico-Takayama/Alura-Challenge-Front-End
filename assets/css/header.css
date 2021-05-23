@@ -24,18 +24,34 @@
     color: var(--branco);
 }
 
+.header__search:hover {
+    background: rgba(255, 255, 255, 0.24);
+}
+
 .header__profile{
-    display: flex;
     width: 24%;
+    display: flex;
     justify-content: flex-end;
+}
+
+.header__bg {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1rem 0.75rem 1rem 0.75rem;
+    box-sizing: border-box;
     height: 56px;
+}
+
+.header__bg:hover {
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .header__profile__photo {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    margin: 0.5rem;
+    margin-right: 0.5rem;
     object-fit: cover;
 }
 
