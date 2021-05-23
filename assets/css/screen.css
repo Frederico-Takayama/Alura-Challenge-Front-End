@@ -1,6 +1,11 @@
+.middle {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
 .screen {
     background-color: var(--azul-claro);
-    width: 50%;
     border-radius: 8px;
     transition: background-color 0.8s;
     height: 366px;
@@ -53,4 +58,15 @@
     font-family: var(--roboto-mono);
     font-size: 14px;
     line-height: 18px;
+}
+
+.screen__vizualize {
+    margin-top: 1.5rem;
+    height: 56px;
+    border-radius: 8px;
+    height: 56px;
+    border: none;
+    padding: 0 14px 0 14px;
+    color: var(--branco);
+    background: rgba(80, 129, 251, 0.08);
 }
