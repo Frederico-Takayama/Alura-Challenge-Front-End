@@ -62,7 +62,15 @@ body {
 }
 
 @media screen and (max-width:1440px) {
+    .left_container {
+        margin-left: 2rem;
+    }
+
     .right_container {
-        margin-right: 2.875rem;
+        margin-right: 2rem;
+    }
+
+    .main {
+        flex-direction: column;
     }
 }

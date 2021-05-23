@@ -188,3 +188,13 @@
 .sidebar__submit:focus {
     background: var(--azul-ceu-limpo);
 }
+
+@media screen and (max-width:1440px) {
+    .sidebar {
+        width: initial;
+    }
+
+    .sidebar__submit {
+        margin-bottom: 2.5rem;
+    }
+}

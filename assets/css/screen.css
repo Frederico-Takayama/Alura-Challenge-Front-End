@@ -83,3 +83,14 @@
 .screen__vizualize:focus {
     background: rgba(80, 129, 251, 0.16);
 }
+
+@media screen and (max-width:1440px) {
+    .menu {
+        order: 1;
+    }
+
+    .middle {
+        width: initial;
+        margin: 0 2rem 0 2rem;
+    }
+}

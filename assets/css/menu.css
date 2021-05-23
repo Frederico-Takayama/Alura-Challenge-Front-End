@@ -58,3 +58,9 @@
 .menu__editor .menu__name, .menu__community .menu__name {
     opacity: 0.56;
 }
+
+@media screen and (max-width:1440px) {
+    .menu{
+        display: none;
+    }
+}
