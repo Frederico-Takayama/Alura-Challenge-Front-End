@@ -146,7 +146,7 @@
 }
 /* end of customized select */
 
-.color-picker {
+.sidebar__color-picker {
     margin-top: 1rem;
     margin-right:2.5rem;
     background: rgba(196, 196, 196, 0.01);
@@ -155,4 +155,15 @@
     border-radius: 8px;
     width: 100%;
     height: 56px;
+}
+
+.sidebar__submit {
+    margin-top: 2.5rem;
+    height: 56px;
+    border-radius: 8px;
+    height: 56px;
+    border: none;
+    padding: 0 14px 0 14px;
+    color: var(--preto);
+    background-color: var(--azul-agua);
 }
