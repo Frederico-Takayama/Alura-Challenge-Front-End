@@ -1,6 +1,6 @@
-document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
-    console.log('here');
-    console.log(this.querySelector('.custom-select'))
+const customSelectSelector = document.querySelector('.custom-select-wrapper');
+
+customSelectSelector.addEventListener('click', function() {
     this.querySelector('.custom-select').classList.toggle('open');
 })
 

@@ -60,6 +60,10 @@
     line-height: 18px;
 }
 
+#screen__editor_bg {
+    background-color: var(--grafite);
+}
+
 .screen__vizualize {
     margin-top: 1.5rem;
     height: 56px;
@@ -69,6 +73,8 @@
     padding: 0 14px 0 14px;
     color: var(--branco);
     background: rgba(80, 129, 251, 0.08);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .screen__vizualize:hover {
