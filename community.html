@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
 
-        <title>Allura Challenge | Editor de Código</title>
+        <title>Allura Challenge | Comunidade</title>
 
         <link href="assets/css/normalize.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -47,7 +47,7 @@
                 <p class="title">Menu</p>
                 <ul>
                     <li>
-                        <a href="index.html" class="menu__editor--active">
+                        <a href="index.html" class="menu__editor">
                             <div class="menu__img__bg">
                                 <img src="assets/img/icon-code_editor.svg" alt="Icone do editor de código" class="menu__editor__img">
                             </div>
@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="community.html" class="menu__community">
+                        <a href="community.html" class="menu__community--active">
                             <div class="menu__img__bg">
                                 <img src="assets/img/icon-community.svg" alt="" class="menu__community__img">
                             </div>
@@ -65,54 +65,8 @@
                 </ul>
             </nav>
             <section class="middle">
-                <div class="screen middle_container" id="screen_bg">
-                    <div class="screen__area">
-                        <div class="screen__prompt">
-                            <div class="screen__dot screen__dot-red"></div>
-                            <div class="screen__dot screen__dot-yellow"></div>
-                            <div class="screen__dot screen__dot-green"></div>
-                        </div>
-                        <textarea name="screen__editor" cols="30" rows="10" class="screen__editor">
-const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-const unfold = (f, seed) => {
-    const go = (f, seed, acc) => {
-        const res = f(seed)
-        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-    }
-    return go(f, seed, [])
-}
-                        </textarea>
-                    </div>
-                </div>
-                <input type="submit" value="Visualizar com highlight" class="screen__vizualize">
             </section>
             <nav class="sidebar right_container">
-                <section class="sidebar__navigation">
-                    <form class="sidebar__form">
-                        <p class="title">Seu projeto</p>
-                        <input type="text" id="project_name" placeholder="Nome do seu projeto" class="sidebar__input"/>
-                        <textarea name="project_description" id="project_description" placeholder="Descrição do seu projeto"
-                            cols="30" rows="10" class="sidebar__description"></textarea>
-                        <p class="title">Personalização</p>
-                        <div class="custom-select-wrapper sidebar__select">
-                            <div class="custom-select">
-                                <div class="custom-select__trigger"><span>Javascript</span>
-                                    <div class="arrow"></div>
-                                </div>
-                                <div class="custom-options">
-                                    <span class="custom-option selected" data-value="0">Javascript</span>
-                                    <span class="custom-option" data-value="1">HTML</span>
-                                    <span class="custom-option" data-value="2">CSS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="color" id="favcolor" name="favcolor" value="#6BD1FF" class="sidebar__color-picker">
-                        <input type="submit" value="Salvar Projeto" class="sidebar__submit">
-                    </form>
-                </section>
             </nav>
         </main>
         <footer>

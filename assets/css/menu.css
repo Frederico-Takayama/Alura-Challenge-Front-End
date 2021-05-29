@@ -29,15 +29,14 @@
     text-decoration: none;
 }
 
-.menu__editor:hover, .menu__community:hover, .menu__editor--active:hover, .menu__community--active:hover {
-    background-color: rgba(255, 255, 255, 0.16);
-    border-radius: 16px;
-}
 .menu__img__bg {
     padding: 12px;
     background-color: rgba(80, 129, 251, 0.16);
     border-radius: 16px;
     height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu__editor--active .menu__img__bg, .menu__community--active .menu__img__bg {
@@ -46,7 +45,24 @@
 
 .menu__editor__img, .menu__community__img {
     width: 24px;
-    height: 24px;
+    height: 14px;
+    opacity: 0.56;
+}
+
+.menu__editor:hover .menu__editor__img, .menu__community:hover .menu__community__img {
+    opacity: 0.72;
+}
+
+.menu__editor:active .menu__editor__img, .menu__community:active .menu__community__img {
+    opacity: 1;
+}
+
+.menu__editor:hover .menu__img__bg, .menu__community:hover .menu__img__bg {
+    background: rgba(80, 129, 251, 0.64);
+}
+
+.menu__editor:active .menu__img__bg, .menu__community:active .menu__img__bg {
+    background: var(--azul-agua);
 }
 
 .menu__name {
@@ -57,6 +73,14 @@
 
 .menu__editor .menu__name, .menu__community .menu__name {
     opacity: 0.56;
+}
+
+.menu__editor:hover .menu__name, .menu__community:hover .menu__name {
+    opacity: 0.72;
+}
+
+.menu__editor:active .menu__name, .menu__community:active .menu__name {
+    opacity: 1;
 }
 
 @media screen and (max-width:1440px) {
