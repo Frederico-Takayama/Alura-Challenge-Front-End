@@ -85,19 +85,21 @@
                         <input type="text" id="project_name" placeholder="Nome do seu projeto" class="sidebar__input"/>
                         <textarea name="project_description" id="project_description" placeholder="Descrição do seu projeto" cols="30" rows="10" class="sidebar__description"></textarea>
                         <p class="title">Personalização</p>
-                        <div class="custom-select-wrapper sidebar__select">
-                            <div class="custom-select">
-                                <div class="custom-select__trigger"><span>Javascript</span>
-                                    <div class="arrow"></div>
-                                </div>
-                                <div class="custom-options">
-                                    <span class="custom-option selected" data-value="0">Javascript</span>
-                                    <span class="custom-option" data-value="1">HTML</span>
-                                    <span class="custom-option" data-value="2">CSS</span>
+                        <div class="sidebar__personalization">
+                            <div class="custom-select-wrapper sidebar__select">
+                                <div class="custom-select">
+                                    <div class="custom-select__trigger"><span>Javascript</span>
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option selected" data-value="0">Javascript</span>
+                                        <span class="custom-option" data-value="1">HTML</span>
+                                        <span class="custom-option" data-value="2">CSS</span>
+                                    </div>
                                 </div>
                             </div>
+                            <input type="color" id="favcolor" name="favcolor" value="#6BD1FF" class="sidebar__color-picker">
                         </div>
-                        <input type="color" id="favcolor" name="favcolor" value="#6BD1FF" class="sidebar__color-picker">
                         <input type="submit" value="Salvar Projeto" class="sidebar__submit">
                     </form>
                 </section>

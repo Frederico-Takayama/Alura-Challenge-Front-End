@@ -1,5 +1,5 @@
 .menu {
-    width: 25%;
+    width: 21.667%;
 }
 
 .menu ul {
@@ -83,7 +83,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1439px) {
     .menu{
         display: none;
     }

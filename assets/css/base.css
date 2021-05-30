@@ -31,11 +31,11 @@ body {
 }
 
 .left_container {
-    margin: 2rem 0 0.5rem 2.5rem;
+    margin: 2rem 0 0.5rem 2rem;
 }
 
 .right_container {
-    margin: 2rem 2.5rem 0.5rem 0;
+    margin: 2rem 2rem 0.5rem 0;
 }
 
 .header {
@@ -47,6 +47,7 @@ body {
 .main {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .title {
@@ -61,16 +62,14 @@ body {
     color: var(--prata);
 }
 
-@media screen and (max-width:1440px) {
-    .left_container {
-        margin-left: 2rem;
-    }
-
-    .right_container {
-        margin-right: 2rem;
-    }
-
+@media screen and (max-width:1439px) {
     .main {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .right_container {
+        margin: 2rem 1rem 0.5rem 0;
     }
 }

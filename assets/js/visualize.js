@@ -20,7 +20,7 @@ function getLanguage() {
 function updateScreenEditorLanguage(language) {
     vizualizeScreenEditor[0].removeAttribute("class");
 
-    var classList = ['screen__editor', 'hljs', `${language}`];
+    let classList = ['screen__editor', 'hljs', `${language}`];
     classList.forEach(element => {
         vizualizeScreenEditor[0].classList.add(element);
     });

@@ -1,5 +1,5 @@
 .sidebar {
-    width: 25%;
+    width: 21.667%;
     padding-left: 2.5rem;
     box-sizing: border-box;
 }
@@ -189,12 +189,46 @@
     background: var(--azul-ceu-limpo);
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1439px) {
     .sidebar {
         width: initial;
     }
 
     .sidebar__submit {
-        margin-bottom: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .sidebar__personalization {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sidebar__select {
+        width: -webkit-fill-available;
+        margin-right: 1rem;
+    }
+
+    .sidebar__color-picker {
+        width: -webkit-fill-available;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .sidebar {
+        padding-left: 1rem;
+    }
+
+    .sidebar__personalization {
+        flex-direction: column;
+    }
+
+    .sidebar__select {
+        width: -webkit-fill-available;
+        margin: 1rem 0 0 0;
+    }
+
+    .sidebar__color-picker {
+        width: -webkit-fill-available;
     }
 }
