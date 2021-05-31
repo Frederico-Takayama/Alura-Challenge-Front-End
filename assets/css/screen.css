@@ -51,7 +51,9 @@
 .screen__editor {
     background-color: var(--grafite);
     resize: none;
-    width: -webkit-fill-available;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
     height: 100%;
     border: none;
     color: var(--branco);
@@ -139,7 +141,9 @@
 .screen__editor_output {
     background-color: var(--grafite);
     resize: none;
-    width: -webkit-fill-available;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
     height: 100%;
     border: none;
     color: var(--branco);
@@ -188,6 +192,16 @@
     height: 40px;
     width: 58px;
     justify-content: space-around;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.community__comment_wrap:hover, .community__like_wrap:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.community__comment_wrap:active, .community__like_wrap:active {
+    background: rgba(255, 255, 255, 0.16);
 }
 
 .community__comment_img, .communty__like_img {
@@ -227,7 +241,9 @@
     }
 
     .middle_right_container {
-        width: -webkit-fill-available;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
         margin: 0 2rem 0 2rem;
     }
 
@@ -240,12 +256,16 @@
     }
 
     .community__wrap {
-        width: -webkit-fill-available;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
         margin-right: 0;
     }
 
     .screen_community__area {
-        width: -webkit-fill-available;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
     }
 }
 
@@ -271,7 +291,9 @@
     }
 
     .middle_right_container {
-        width: -webkit-fill-available;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
         margin: 0 1rem 0 1rem;
     }
 }

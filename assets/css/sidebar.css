@@ -204,12 +204,16 @@
     }
 
     .sidebar__select {
-        width: -webkit-fill-available;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
         margin-right: 1rem;
     }
 
     .sidebar__color-picker {
-        width: -webkit-fill-available;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
         margin-right: 0;
     }
 }
@@ -224,11 +228,15 @@
     }
 
     .sidebar__select {
-        width: -webkit-fill-available;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
         margin: 1rem 0 0 0;
     }
 
     .sidebar__color-picker {
-        width: -webkit-fill-available;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
     }
 }
