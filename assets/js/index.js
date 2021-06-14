@@ -1,6 +1,6 @@
 const vizualizeScreen = document.querySelector('.screen__vizualize');
 const vizualizeScreenEditor = document.querySelectorAll('.screen__editor');
-const vizualizeSelector = document.querySelector('.custom-select__trigger span');
+const vizualizeSelector = document.querySelector('.sidebar__selected span');
 const saveProject_btn = document.querySelector('.sidebar__submit');
 const projectName = document.querySelector('.sidebar__input');
 const projectDescription = document.querySelector('.sidebar__description');

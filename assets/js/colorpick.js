@@ -10,3 +10,5 @@ colorpickColorpicker.addEventListener('change', (e) => {
 function changeScreenBackground(color) {
     colorpickScreenBg.style.backgroundColor = color;
 }
+
+changeScreenBackground('#6BD1FF');

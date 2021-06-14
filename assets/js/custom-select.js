@@ -1,8 +1,10 @@
-const customSelectSelector = document.querySelector('.custom-select-wrapper');
+const customSelectSelectors = document.querySelectorAll('.custom-select-wrapper');
 
-customSelectSelector.addEventListener('click', function() {
-    this.querySelector('.custom-select').classList.toggle('open');
-})
+customSelectSelectors.forEach(customSelectSelector => {
+    customSelectSelector.addEventListener('click', function() {
+        this.querySelector('.custom-select').classList.toggle('open');
+    })
+});
 
 for (const option of document.querySelectorAll(".custom-option")) {
     option.addEventListener('click', function() {

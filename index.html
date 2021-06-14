@@ -14,6 +14,7 @@
         <link href="assets/css/menu.css" rel="stylesheet">
         <link href="assets/css/sidebar.css" rel="stylesheet">
         <link href="assets/css/screen.css" rel="stylesheet">
+        <link href="assets/css/export.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/monokai-sublime.min.css">
     </head>
     <body>
@@ -77,6 +78,30 @@
                     </pre>
                 </div>
                 <input type="submit" value="Visualizar com highlight" class="screen__vizualize">
+                <section class="export">
+                    <p class="title">Exportar</p>
+                    <div class="export__form">
+                        <div class="export__area">
+                            <input type="text" placeholder="Nome do arquivo" class="export__input">
+                            <div class="export__personalization">
+                                <div class="custom-select-wrapper export__select">
+                                    <div class="custom-select">
+                                        <div class="custom-select__trigger"><span>PNG</span>
+                                            <div class="arrow"></div>
+                                        </div>
+                                        <div class="custom-options">
+                                            <span class="custom-option selected" data-value="0">PNG</span>
+                                            <span class="custom-option" data-value="1">JPEG</span>
+                                            <span class="custom-option" data-value="1">JPG</span>
+                                            <span class="custom-option" data-value="1">SVG</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Exportar" class="export__btn">
+                    </div>
+                </section>
             </section>
             <nav class="sidebar right_container">
                 <section class="sidebar__navigation">
@@ -88,7 +113,7 @@
                         <div class="sidebar__personalization">
                             <div class="custom-select-wrapper sidebar__select">
                                 <div class="custom-select">
-                                    <div class="custom-select__trigger"><span>Javascript</span>
+                                    <div class="custom-select__trigger sidebar__selected"><span>Javascript</span>
                                         <div class="arrow"></div>
                                     </div>
                                     <div class="custom-options">
@@ -111,5 +136,8 @@
         <script src="assets/js/colorpick.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
         <script src="assets/js/index.js"></script>
+        <script src="assets/js/html2canvas.min.js"></script>
+        <script src="assets/js/canvas2svg.js"></script>
+        <script src="assets/js/export.js"></script>
     </body>
 </html>
